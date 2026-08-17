@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-Wep-App</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial;
+            padding: 20px;
+            font-size: 20px;
+            border: 1px solid gray;
+            background-color: black;
+            color: white;
+        }
+        nav span{
+            margin-right: 20px;
+
+        }
+    </style>
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+   <script type="text/babel">
+    function Navbar(){
+        return(
+            <nav>
+                <div class="batand-title">Shopping</div>
+                <div>
+                    <span>Home</span>
+                    <span>Shop</span>
+                    <span>Pages</span>
+                    <span>Offers</span>
+                    <span>Contact</span>    
+                </div>
+                <button>Signin</button>
+                </nav>
+        )
+    }
+    function NewUser(){
+        return(
+            <div>
+                <a href="#">New user?Register</a>
+                </div>
+        )
+    }
+    function Login(){
+        return(
+           <form >
+            <h3> User Login</h3>
+            <dl>
+                <dt>User Name</dt>
+                <dd> <input type="username"/></dd>
+                <dt>Password</dt>
+                <dd><input type="password"/></dd>
+                <dt type="text">Email</dt>
+                <dd><input type="email"/></dd>
+             </dl>
+             <button>Login</button>
+             <NewUser/>
+            </form> 
+        )
+    }
+    const root = ReactDOM.createRoot(document.getElementById("root"))
+    // root.render("Welcome to ReactJS 18+...")
+    //root.render(<Login/>)
+    root.render(
+        <section>
+            <Navbar/>
+            <Login/>
+      
+        </section>)
+   </script>
+</head>
+<body>
+    <noscript>
+        Please enable Java sccript in your browser
+    </noscript>
+    <div id="root"></div>
+    <!-- <div type="date"></div> -->
+</body>
+</html>

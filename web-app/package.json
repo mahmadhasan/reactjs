@@ -9,5 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "@babel/standalone": "^8.0.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
 }
