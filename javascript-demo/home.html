@@ -10,11 +10,24 @@
             document.querySelector("p").textContent= Hello();
 
         }
+    </script>-->
+   
+   <!-- <script type="module">
+        import {title,msg} from "./home.js";
+        document.querySelector("h1").textContent=title;
+        document.querySelector("p").textContent=msg;
     </script> -->
-    
+
+    <script type="module">
+        import{title as homeTitle} from "./home.js";
+        import{title as loginTitle} from "./login.js";
+        document.querySelector("h1").textContent=homeTitle();
+    </script>
 </head>
 <!-- <body onload="bodyload()"> -->
     <body
+    <!-- <p></p> -->
+    <h1></h1>
     <!-- <p></p> -->
 </body>
 </html>
