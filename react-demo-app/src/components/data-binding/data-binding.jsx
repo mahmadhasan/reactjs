@@ -13,7 +13,9 @@ export function DataBinding(){
 // const[products,setProducts] = useState(['TV','Laptop','Wash-Machine','BeautyCare']);
 // const[categories,setCategories] = useState(new Array('Electronics','Fashion'));
 
-const [menuItems] = useState(['Home','Offers','Shop','Contact','Services'])
+// const [menuItems] = useState(['Home','Offers','Shop','Contact','Services'])
+
+const [product,setProduct] = useState({id:1,name:'Baba',salary:45000.00,cities:['Hyd','Blngr','Chennai','Kl'],rating:{rate:403.2,count:6000}});
 
     return(
         <div className="control-fluid">
@@ -42,7 +44,7 @@ const [menuItems] = useState(['Home','Offers','Shop','Contact','Services'])
                 }
 
              </select> */}
-            
+{/*             
             <header className="p-1 mt-2 align-items-center bg-light d-flex justify-content-between">
                 <div>
                     <span className="bi bi-justify"></span>
@@ -72,7 +74,38 @@ const [menuItems] = useState(['Home','Offers','Shop','Contact','Services'])
                     }
             </ul>
 
-            </section>
+            </section> */}
+
+        <h4>Product Details</h4>
+    <dl>
+    <dt> Product Id</dt>
+    <dd>{product.id}</dd>
+
+    <dt> Product Name</dt>
+    <dd>{product.name}</dd>
+
+    <dt> Product Salary</dt>
+    <dd>{product.salary.toLocaleString('en-in',{style:'currency',currency:'INR'})}</dd>
+
+    <dt> Shipped To</dt>
+        <dd>
+            <ol>
+
+                {
+                    product.cities.map(city =><li key={city}>{city}</li>)
+                    
+                }
+            </ol>
+        </dd>
+                <dt>Rating</dt>
+                <dd>
+                    { product.rating.rate} <span className="bi bi-star-fill text-success"></span>
+                    [{product.rating.count}]
+                    
+                </dd>
+    </dl>
+
+
         </div>
     )
 }
