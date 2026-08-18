@@ -15,7 +15,17 @@ export function DataBinding(){
 
 // const [menuItems] = useState(['Home','Offers','Shop','Contact','Services'])
 
-const [product,setProduct] = useState({id:1,name:'Baba',salary:45000.00,cities:['Hyd','Blngr','Chennai','Kl'],rating:{rate:403.2,count:6000}});
+// const [product,setProduct] = useState({id:1,name:'Baba',salary:45000.00,cities:['Hyd','Blngr','Chennai','Kl'],rating:{rate:403.2,count:6000}});
+
+const[products] = useState(
+    [
+        {name:"TV",price:45000},
+        {name:"Mobile",price:20000},
+        {name:"Laptop",price:100000},
+        {name:"Bike",price:20000}
+    ]
+)
+
 
     return(
         <div className="control-fluid">
@@ -75,7 +85,7 @@ const [product,setProduct] = useState({id:1,name:'Baba',salary:45000.00,cities:[
             </ul>
 
             </section> */}
-
+{/* 
         <h4>Product Details</h4>
     <dl>
     <dt> Product Id</dt>
@@ -103,8 +113,35 @@ const [product,setProduct] = useState({id:1,name:'Baba',salary:45000.00,cities:[
                     [{product.rating.count}]
                     
                 </dd>
-    </dl>
+    </dl> */}
 
+        <h3> Producta Table </h3>
+
+            <table className="table table-hover" >
+
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                  
+                </tr>
+            </thead>
+
+            <tbody>
+            {
+
+                products.map(product=>
+                    <tr key={product}>
+                        <td>{product.name}</td>
+                        <td>{product.price}</td>
+                    </tr>
+                )
+            }
+
+            </tbody>
+
+            </table>
 
         </div>
     )
