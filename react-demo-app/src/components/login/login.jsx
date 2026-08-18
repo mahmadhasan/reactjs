@@ -4,7 +4,7 @@ export function Login(){
        <div className="login-container">
          <form className="form-container w-25 alert alert-dismissable alert-warning">
             <h3 className='bi bi-person-circle'>User-Ligin</h3>
-            <button data-bs-dismiss="aler" className='btn btn-close'></button>
+            <button data-bs-dismiss="alert" className='btn btn-close'></button>
             <dl>
             <dt>User Name</dt>
             <dd><input type="text" className='form-control'/></dd>
