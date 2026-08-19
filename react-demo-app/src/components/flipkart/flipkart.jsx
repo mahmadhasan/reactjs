@@ -5,15 +5,22 @@ export function Flipkart(){
     const[product,setProduct] = useState({title:null,price:0,image:null,rating:{rate:0,ratings:0,reviews:0},offers:[]});
 
     function LoadData(){
-        var http = new XMLHttpRequest();
-        http.open("get","product.json",true);
-        http.send();
-        http.onreadystatechange = function (){
-         if(http.readyState===4){
-            // console.log(JSON.parse(http.responseText));
-            setProduct(JSON.parse(http.responseText));
-         }
-        }
+        // var http = new XMLHttpRequest();
+        // http.open("get","product.json",true);
+        // http.send();
+        // http.onreadystatechange = function (){
+        //  if(http.readyState===4){
+        //     // console.log(JSON.parse(http.responseText));
+        //     setProduct(JSON.parse(http.responseText));
+        //  }
+        // }
+        fetch("product.json")
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(product){
+                setProduct(product);
+            })
     }
     useEffect(() => {
         LoadData();
