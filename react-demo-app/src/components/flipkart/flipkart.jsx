@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import axios from axios;
 export function Flipkart(){
 
     const[product,setProduct] = useState({title:null,price:0,image:null,rating:{rate:0,ratings:0,reviews:0},offers:[]});
@@ -14,14 +14,33 @@ export function Flipkart(){
         //     setProduct(JSON.parse(http.responseText));
         //  }
         // }
-        fetch("product.json")
-            .then(function(response){
-                return response.json();
-            })
-            .then(function(product){
-                setProduct(product);
-            })
-    }
+
+        // #####################Fetch-API###############
+        
+        
+    //     fetch("product.json")
+    //         .then(function(response){
+    //             return response.json();
+    //         })
+    //         .then(function(product){
+    //             setProduct(product);
+    //         })
+    // }
+
+    // ##################### Axios ###############
+        axios.get('product.json')
+                .then(response =>{
+                    setProduct(response.data);
+                    console.log(response.status);
+                })
+                .catch(error =>{
+                    console.log(error);
+                    }
+                    )
+                    .finally(()=>{
+                        console.log("Request End....");
+                    })
+
     useEffect(() => {
         LoadData();
             }, []);
