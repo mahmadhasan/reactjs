@@ -17,17 +17,21 @@ export function DataBinding(){
 
 // const [product,setProduct] = useState({id:1,name:'Baba',salary:45000.00,cities:['Hyd','Blngr','Chennai','Kl'],rating:{rate:403.2,count:6000}});
 
-const[products] = useState(
-    [
-        {name:"TV",price:45000},
-        {name:"Mobile",price:20000},
-        {name:"Laptop",price:100000},
-        {name:"Bike",price:20000}
-    ]
-)
+// const[products] = useState(
+//     [
+//         {name:"TV",price:45000},
+//         {name:"Mobile",price:20000},
+//         {name:"Laptop",price:100000},
+//         {name:"Bike",price:20000}
+//     ]
+// )
 
-
-    return(
+const[departure] =useState(new Date())
+const[weekdays] = useState(['sunday','monday','tuesday','wednesday','thursday','friday','saturday'])
+const[months] = useState(['Jan','Feb','Mar','Apr','May','Jun','July',
+    'Aug','Sep','Oct','Nov','Dec'
+])  
+return(
         <div className="control-fluid">
 
             {/* <h2>Data-Binding</h2>
@@ -114,8 +118,8 @@ const[products] = useState(
                     
                 </dd>
     </dl> */}
-
-        <h3> Producta Table </h3>
+{/* #========================================== */}
+        {/* <h3> Producta Table </h3>
 
             <table className="table table-hover" >
 
@@ -141,7 +145,10 @@ const[products] = useState(
 
             </tbody>
 
-            </table>
+            </table> */}
+{/* ====================== Dinding Date Type================================ */}
+    <h3>Depature : {departure.toDateString()}{weekdays[departure.getDay]}{months[departure.getMonth]}</h3>
+
 
         </div>
     )
