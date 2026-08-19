@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
-
-export function flipkart(){
+export function Flipkart(){
 
     const[product,setProduct] = useState({title:null,price:0,image:null,rating:{rate:0,ratings:0,reviews:0},offers:[]});
 
@@ -16,17 +15,17 @@ export function flipkart(){
          }
         }
     }
-
-    useEffect(()=>{
+    useEffect(() => {
         LoadData();
-    },[])
+            }, []);
+
     
     return(
         <div className="container-fluid">
             <div className="mt-4">
                <div className="row">
                     <div className="col-3">
-                    <img width="100%"   src="{product.image}" alt="" />
+                    <img width="100%"   src="{product.image}"/>
                     </div>
                     <div className="col-9">
                             <div className="fs-4">{product.title}</div>
@@ -40,7 +39,7 @@ export function flipkart(){
                             <ul>
                                 {
                                     product.offers.map(offer => 
-                                        <li key={offer}><span>{}</span></li>
+                                        <li key={offer}><span>{offer}</span></li>
                                     )
                                 }
                             </ul>
