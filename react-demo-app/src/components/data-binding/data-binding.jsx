@@ -26,7 +26,10 @@ export function DataBinding(){
 //     ]
 // )
 
-const[departure] =useState(new Date('2026-05-23 15:12:56'))
+// const[departure] =useState(new Date('2026-05-23 15:12:56'))
+
+const[regEx] = useState(/(?=.*[A-Z])\w{14,15}/);
+const[password] = useState('david123');
 
 
 // const[weekdays] = useState(['sunday','monday','tuesday','wednesday','thursday','friday','saturday'])
@@ -153,7 +156,14 @@ return(
 
 
 {/* ====================== Example of Moment================================ */}
-        <h3>Depature : {moment(departure).format('DD-MM-YY')}</h3>
+        {/* <h3>Depature : {moment(departure).format('DD-MM-YY')}</h3> */}
+
+
+{/* ====================== Regular Expression Type ================================ */}
+        <p> Your Password :{password}</p>
+        {
+      (password.match(regEx))? "Strong Password" :"Week Password one uppercase letter is required"
+        }
 
         </div>
     )
