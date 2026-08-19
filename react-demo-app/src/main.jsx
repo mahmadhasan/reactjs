@@ -9,6 +9,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
     {/* <Login/> */}
-    <DataBinding/>
+    {/* <DataBinding/> */}
+    <flipkart/>
   </StrictMode>,
 )
