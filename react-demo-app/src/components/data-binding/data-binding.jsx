@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-
+import moment from "moment"
 export function DataBinding(){
 //    var userName ="Baba";
 // const [getPrice,setPrice] = useState(4500000.000);
@@ -26,11 +26,13 @@ export function DataBinding(){
 //     ]
 // )
 
-const[departure] =useState(new Date())
-const[weekdays] = useState(['sunday','monday','tuesday','wednesday','thursday','friday','saturday'])
-const[months] = useState(['Jan','Feb','Mar','Apr','May','Jun','July',
-    'Aug','Sep','Oct','Nov','Dec'
-])  
+const[departure] =useState(new Date('2026-05-23 15:12:56'))
+
+
+// const[weekdays] = useState(['sunday','monday','tuesday','wednesday','thursday','friday','saturday'])
+// const[months] = useState(['Jan','Feb','Mar','Apr','May','Jun','July',
+//     'Aug','Sep','Oct','Nov','Dec'
+// ])  
 return(
         <div className="control-fluid">
 
@@ -147,8 +149,11 @@ return(
 
             </table> */}
 {/* ====================== Dinding Date Type================================ */}
-    <h3>Depature : {departure.toDateString()}{weekdays[departure.getDay]}{months[departure.getMonth]}</h3>
+    {/* <h3>Depature : {departure.toDateString()}{weekdays[departure.getDay]}{months[departure.getMonth]}</h3> */}
 
+
+{/* ====================== Example of Moment================================ */}
+        <h3>Depature : {moment(departure).format('DD-MM-YY')}</h3>
 
         </div>
     )
