@@ -1,0 +1,42 @@
+[
+    {
+
+        "title" :"VISHWANATH AND SONS",
+        "poster":"image.png",
+        "language":"tamil",
+        "certificate":"A"
+
+    },
+    {
+
+        "title" :"SPIDERMAN BRAND NEW DAY",
+        "poster":"image-1.png",
+        "language":"english",
+        "certificate":"A+"
+
+    },
+    {
+        "title" :"AWARAPAN 2",
+        "poster":"image-2.png",
+        "language":"Hindi",
+        "certificate":"A"
+
+    },
+    {
+
+        "title" :"BATWARA 1947",
+        "poster":"image-3.png",
+        "language":"Hindi",
+        "certificate":"A"
+
+    },
+    
+    {
+
+        "title" :"THE ODYSSEY",
+        "poster":"image-4.png",
+        "language":"English",
+        "certificate":"A+"
+
+    }
+]
