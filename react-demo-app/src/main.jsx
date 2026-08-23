@@ -10,7 +10,8 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 // import { Login } from './components/login/login.jsx';
 //import { DataBinding } from './components/data-binding/data-binding.jsx';
 // import { InoxMovies } from './components/inox/inox.jsx';
-import { Fakestore } from './components/fakestore/fakestore.jsx';
+//import { Fakestore } from './components/fakestore/fakestore.jsx';
+import { EventBinding } from './components/event-binding/event-binding.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     {/* <DataBinding/> */}
     {/* <flipkart/> */}
         {/* <InoxMovies/> */}
-        <Fakestore/>
+        {/* <Fakestore/> */}
+        <EventBinding/>
   </StrictMode>,
 )
