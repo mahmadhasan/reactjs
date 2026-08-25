@@ -15,7 +15,7 @@ export function MouseAnimation(){
     }
      return(
         <div className="d-flex justify-content-center align-items-center" style={{height:'100vh'}} >
-            <img onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}  src="react.svg" width="100" height="100" style={animationObject}/>
+        <img onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}  src="react.svg" width="100" height="100" style={animationObject}/>
 
         </div>
     )
