@@ -12,7 +12,9 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 // import { InoxMovies } from './components/inox/inox.jsx';
 //import { Fakestore } from './components/fakestore/fakestore.jsx';
 //import { EventBinding } from './components/event-binding/event-binding.jsx';
-import { MouseDemo } from './components/mouse-events/mous-demo.jsx';
+//import { MouseDemo } from './components/mouse-events/mous-demo.jsx';
+import { MouseAnimation } from './components/mouse-animation/mouse-animation.jsx';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -22,6 +24,7 @@ createRoot(document.getElementById('root')).render(
         {/* <InoxMovies/> */}
         {/* <Fakestore/> */}
         {/* <EventBinding/> */}
-        <MouseDemo/>
+        {/* <MouseDemo/> */}
+        <MouseAnimation/>
   </StrictMode>,
 )
