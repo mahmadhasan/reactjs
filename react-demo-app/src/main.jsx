@@ -16,6 +16,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import { MouseAnimation } from './components/mouse-animation/mouse-animation.jsx';
 import { MouseMove } from './components/mousemove/mouse-move.jsx';
 import { KeyDemo } from './components/key-demo/key-demo.jsx';
+import { ButtonDemo } from './components/button-demo/button-demo.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')).render(
         {/* <MouseDemo/> */}
         {/* <MouseAnimation/> */}
         {/* <MouseMove/> */}
-        <KeyDemo/>
+        {/* <KeyDemo/> */}
+        <ButtonDemo/>
   </StrictMode>,
 )
