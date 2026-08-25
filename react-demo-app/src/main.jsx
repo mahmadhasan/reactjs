@@ -15,6 +15,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { MouseDemo } from './components/mouse-events/mous-demo.jsx';
 import { MouseAnimation } from './components/mouse-animation/mouse-animation.jsx';
 import { MouseMove } from './components/mousemove/mouse-move.jsx';
+import { KeyDemo } from './components/key-demo/key-demo.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')).render(
         {/* <EventBinding/> */}
         {/* <MouseDemo/> */}
         {/* <MouseAnimation/> */}
-        <MouseMove/>
+        {/* <MouseMove/> */}
+        <KeyDemo/>
   </StrictMode>,
 )
