@@ -11,7 +11,8 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { DataBinding } from './components/data-binding/data-binding.jsx';
 // import { InoxMovies } from './components/inox/inox.jsx';
 //import { Fakestore } from './components/fakestore/fakestore.jsx';
-import { EventBinding } from './components/event-binding/event-binding.jsx';
+//import { EventBinding } from './components/event-binding/event-binding.jsx';
+import { MouseDemo } from './components/mouse-events/mous-demo.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
     {/* <flipkart/> */}
         {/* <InoxMovies/> */}
         {/* <Fakestore/> */}
-        <EventBinding/>
+        {/* <EventBinding/> */}
+        <MouseDemo/>
   </StrictMode>,
 )
