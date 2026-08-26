@@ -18,6 +18,7 @@ import { MouseMove } from './components/mousemove/mouse-move.jsx';
 import { KeyDemo } from './components/key-demo/key-demo.jsx';
 import { ButtonDemo } from './components/button-demo/button-demo.jsx';
 import { ElementState } from './components/element-state/element-state.jsx';
+import { EmiCalculator } from './components/emi-calculator/emi-calculator.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -33,6 +34,7 @@ createRoot(document.getElementById('root')).render(
         {/* <MouseMove/> */}
         {/* <KeyDemo/> */}
         {/* <ButtonDemo/> */}
-        <ElementState/>
+        {/* <ElementState/> */}
+        <EmiCalculator/>
   </StrictMode>,
 )
