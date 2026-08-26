@@ -13,12 +13,13 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { Fakestore } from './components/fakestore/fakestore.jsx';
 //import { EventBinding } from './components/event-binding/event-binding.jsx';
 //import { MouseDemo } from './components/mouse-events/mous-demo.jsx';
-import { MouseAnimation } from './components/mouse-animation/mouse-animation.jsx';
-import { MouseMove } from './components/mousemove/mouse-move.jsx';
-import { KeyDemo } from './components/key-demo/key-demo.jsx';
-import { ButtonDemo } from './components/button-demo/button-demo.jsx';
-import { ElementState } from './components/element-state/element-state.jsx';
-import { EmiCalculator } from './components/emi-calculator/emi-calculator.jsx';
+//import { MouseAnimation } from './components/mouse-animation/mouse-animation.jsx';
+//import { MouseMove } from './components/mousemove/mouse-move.jsx';
+//import { KeyDemo } from './components/key-demo/key-demo.jsx';
+//import { ButtonDemo } from './components/button-demo/button-demo.jsx';
+//import { ElementState } from './components/element-state/element-state.jsx';
+//import { EmiCalculator } from './components/emi-calculator/emi-calculator.jsx';
+import { DebounceDemo } from './components/debounce-demo/debounce-demo.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -35,6 +36,7 @@ createRoot(document.getElementById('root')).render(
         {/* <KeyDemo/> */}
         {/* <ButtonDemo/> */}
         {/* <ElementState/> */}
-        <EmiCalculator/>
+        {/* <EmiCalculator/> */}
+        <DebounceDemo/>
   </StrictMode>,
 )
