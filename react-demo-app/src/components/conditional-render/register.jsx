@@ -1,0 +1,18 @@
+export function Register(){
+    
+        <div>
+            <h2>User Register</h2>
+
+            <dl>
+                <dt>Name</dt>
+                <dd><input type="text" /></dd>
+
+                <dt>Email</dt>
+                <dd><input type="text" /></dd>
+
+                <dt>Mobile</dt>
+                <dd><input type="text" /></dd>
+            </dl>
+           <button>Register</button>
+        </div>
+}

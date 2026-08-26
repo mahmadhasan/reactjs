@@ -5,7 +5,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { ThrottleDemo } from './components/throttle-demo/throttle-demo.jsx';
-import { CarousalDemo } from './components/carousal-demo/carousal-demo.jsx';
+//import { CarousalDemo } from './components/carousal-demo/carousal-demo.jsx';
+import { ConditionalRenderDemo } from './components/conditional-render/conditional-render.jsx';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import App from './App.jsx'
@@ -41,6 +42,7 @@ createRoot(document.getElementById('root')).render(
         {/* <EmiCalculator/> */}
         {/* <DebounceDemo/> */}
         {/* <ThrottleDemo/> */}
-        <CarousalDemo/>
+        {/* <CarousalDemo/> */}
+        <ConditionalRenderDemo/>
   </StrictMode>,
 )
