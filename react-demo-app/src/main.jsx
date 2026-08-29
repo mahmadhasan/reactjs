@@ -6,7 +6,7 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { ThrottleDemo } from './components/throttle-demo/throttle-demo.jsx';
 //import { CarousalDemo } from './components/carousal-demo/carousal-demo.jsx';
-import { ConditionalRenderDemo } from './components/conditional-render/conditional-render.jsx';
+//import { ConditionalRenderDemo } from './components/conditional-render/conditional-render.jsx';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import App from './App.jsx'
@@ -23,7 +23,7 @@ import { ConditionalRenderDemo } from './components/conditional-render/condition
 //import { ElementState } from './components/element-state/element-state.jsx';
 //import { EmiCalculator } from './components/emi-calculator/emi-calculator.jsx';
 //import { DebounceDemo } from './components/debounce-demo/debounce-demo.jsx';
-
+import { ControlledComponentDemo } from './components/controlled-components-demo/controlled-component.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -43,6 +43,7 @@ createRoot(document.getElementById('root')).render(
         {/* <DebounceDemo/> */}
         {/* <ThrottleDemo/> */}
         {/* <CarousalDemo/> */}
-        <ConditionalRenderDemo/>
+        {/* <ConditionalRenderDemo/> */}
+        <ControlledComponentDemo/>
   </StrictMode>,
 )
