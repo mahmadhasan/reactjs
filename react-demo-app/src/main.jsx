@@ -24,7 +24,9 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { EmiCalculator } from './components/emi-calculator/emi-calculator.jsx';
 //import { DebounceDemo } from './components/debounce-demo/debounce-demo.jsx';
 //import { ControlledComponentDemo } from './components/controlled-components-demo/controlled-component.jsx';
-import { ContextDemo } from './components/context-demo/context-demo.jsx';
+//import { ContextDemo } from './components/context-demo/context-demo.jsx';
+import { WeatherAppDemo } from './components/weather-app/weather-app.jsx';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -46,6 +48,7 @@ createRoot(document.getElementById('root')).render(
         {/* <CarousalDemo/> */}
         {/* <ConditionalRenderDemo/> */}
         {/* <ControlledComponentDemo/> */}
-        <ContextDemo/>
+        {/* <ContextDemo/> */}
+        <WeatherAppDemo/>
   </StrictMode>,
 )
