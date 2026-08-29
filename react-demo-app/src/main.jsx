@@ -23,7 +23,8 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { ElementState } from './components/element-state/element-state.jsx';
 //import { EmiCalculator } from './components/emi-calculator/emi-calculator.jsx';
 //import { DebounceDemo } from './components/debounce-demo/debounce-demo.jsx';
-import { ControlledComponentDemo } from './components/controlled-components-demo/controlled-component.jsx';
+//import { ControlledComponentDemo } from './components/controlled-components-demo/controlled-component.jsx';
+import { ContextDemo } from './components/context-demo/context-demo.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -44,6 +45,7 @@ createRoot(document.getElementById('root')).render(
         {/* <ThrottleDemo/> */}
         {/* <CarousalDemo/> */}
         {/* <ConditionalRenderDemo/> */}
-        <ControlledComponentDemo/>
+        {/* <ControlledComponentDemo/> */}
+        <ContextDemo/>
   </StrictMode>,
 )
