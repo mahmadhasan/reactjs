@@ -10,6 +10,21 @@ export function DataGridDemo(props){
                 </tr>
             </thead>
 
+            <tbody>
+                {
+
+                    props.data.map(item=>{
+                        <tr key={itemm}>
+                            {
+                                Object.keys(item).map(key=> <td key={key}>
+                                    item[key]
+                                </td>)
+                            }
+                        </tr>
+                    })
+                }
+            </tbody>
+
         </table>
     )
 }
