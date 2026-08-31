@@ -26,7 +26,8 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { ControlledComponentDemo } from './components/controlled-components-demo/controlled-component.jsx';
 //import { ContextDemo } from './components/context-demo/context-demo.jsx';
 //import { WeatherAppDemo } from './components/weather-app/weather-app.jsx';
-import {ParentDemo} from'./components/transport-demo/transport-demo.jsx'
+//import {ParentDemo} from'./components/transport-demo/transport-demo.jsx'
+import { FormDemo } from './components/form-demo/form-demo.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -50,6 +51,7 @@ createRoot(document.getElementById('root')).render(
         {/* <ControlledComponentDemo/> */}
         {/* <ContextDemo/> */}
         {/* <WeatherAppDemo/> */}
-        <ParentDemo/>
+        {/* <ParentDemo/> */}
+        <FormDemo/>
   </StrictMode>,
 )
