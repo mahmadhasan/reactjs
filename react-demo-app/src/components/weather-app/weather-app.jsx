@@ -11,7 +11,8 @@ export function WeatherAppDemo(){
 
     function handleSearchClick(){
         setSearchCity(cityName);
-        setToggleDetails('d-block')
+         //setToggleDetails('d-block');
+        setToggleDetails('d-block');
     }
     return(
         <div className="container-fluid bg-secondary d-flex justify-content-center align-center">
