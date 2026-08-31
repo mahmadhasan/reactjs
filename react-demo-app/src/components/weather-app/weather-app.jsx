@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
 import { WeatherDetails } from "./weather-details";
+
+ export let CityContext = createContext(null);
 
 export function WeatherAppDemo(){
     const[cityName,setCityName] = useState('');
@@ -24,7 +26,9 @@ export function WeatherAppDemo(){
                         <button onClick={handleSearchClick} className="btn btn-warning bi bi-search"></button>
                     </div>
                     <div className="mt-4 ${toggleDetails}">
-                        <WeatherDetails searchCity={searchCity}/>
+                        <CityContext value={searchCity}>
+                        <WeatherDetails/>
+                        </CityContext>
                     </div>
                 </div>
 

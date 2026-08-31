@@ -1,20 +1,24 @@
 import axios from "axios"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { CityContext } from "./weather-app"
 
-export function WeatherDetails(props){
+export function WeatherDetails(){
     const[weatherObj,setWeatherObj] = useState({
         weather:[],
         main:{remp:0},
         name:null
     })
+
+    let context = useContext(CityContext);
+
     function LoadWeatherData(){
-axios.get("https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=cceb07dab58caaa629bfd5c24cd7daba").then(response=>{
+axios.get("https://api.openweathermap.org/data/2.5/weather?q=${context}&appid=cceb07dab58caaa629bfd5c24cd7daba").then(response=>{
             setWeatherObj(response.data);
         })
     }
     useEffect(()=>{
         LoadWeatherData();
-    },[props])
+    },[context])
     return(
         <div className="bg-light shadow shadow-lg">
             <h4>{weatherObj.name}</h4>
