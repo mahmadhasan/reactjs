@@ -26,11 +26,12 @@ export function ReactHookFormDemo(){
                         (errors.Mobile?.type==="required")?<span>Mobile Required</span>:<span></span>
                         &&
                         (errors.Mobile?.type==="pattern")?<span>Invalid Mobile +91 44545435210</span>:<span></span>
-                        
+
                     }
-
                 </dd>
-
+                 <dt>Upload File</dt>
+                 <dd><input type="file"/> <button className="btn d-inline btn-link">Upload More</button><button className="btn bi bi-trash d-inline"></button>
+                 </dd>
             </dl>
             <button type="submit">submit</button>
             </form>

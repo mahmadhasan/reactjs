@@ -4,7 +4,7 @@ import './index.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
-import { ReactHookFormDemo } from './components/hook-form-demo/hook-form-demo.jsx';
+//import { ReactHookFormDemo } from './components/hook-form-demo/hook-form-demo.jsx';
 //import { ThrottleDemo } from './components/throttle-demo/throttle-demo.jsx';
 //import { CarousalDemo } from './components/carousal-demo/carousal-demo.jsx';
 //import { ConditionalRenderDemo } from './components/conditional-render/conditional-render.jsx';
@@ -32,6 +32,8 @@ import { ReactHookFormDemo } from './components/hook-form-demo/hook-form-demo.js
 //import { FormikDemo } from './components/formik-demo/formik-demo.jsx';
 //import {YupValidationDemo} from './components/yup-validation-demo/yup-validation-demo.jsx';
 //import { FormikFormDemo } from './components/formik-form-demo/formik-form-demo.jsx';
+import {FormDemo19X} from  './components/19x-form-demo/19x-form-demo.jsx';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -60,6 +62,8 @@ createRoot(document.getElementById('root')).render(
         {/* <FormikDemo/> */}
         {/* <YupValidationDemo/> */}
         {/* <FormikFormDemo/> */}
-        <ReactHookFormDemo/>
+        {/* <ReactHookFormDemo/> */}
+
+        <FormDemo19X/>
   </StrictMode>,
 )
