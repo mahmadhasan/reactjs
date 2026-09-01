@@ -28,7 +28,9 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { WeatherAppDemo } from './components/weather-app/weather-app.jsx';
 //import {ParentDemo} from'./components/transport-demo/transport-demo.jsx'
 //import { FormDemo } from './components/form-demo/form-demo.jsx';
-import { FormikDemo } from './components/formik-demo/formik-demo.jsx';
+//import { FormikDemo } from './components/formik-demo/formik-demo.jsx';
+import {YupValidationDemo} from './components/yup-validation-demo/yup-validation-demo.jsx';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -54,6 +56,7 @@ createRoot(document.getElementById('root')).render(
         {/* <WeatherAppDemo/> */}
         {/* <ParentDemo/> */}
         {/* <FormDemo/> */}
-        <FormikDemo/>
+        {/* <FormikDemo/> */}
+        <YupValidationDemo/>
   </StrictMode>,
 )
