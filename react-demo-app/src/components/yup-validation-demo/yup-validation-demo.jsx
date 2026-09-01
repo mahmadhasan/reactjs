@@ -27,7 +27,7 @@ export function YupValidationDemo(){
         <form onSubmit={formik.handleSubmit}>
             <dl>
                 <dt>User-Name</dt>
-                <dd><input type="text" onChange={formik.handleChange}  name="UserName"/></dd>
+                <dd><input type="text" onBlur={formik.handleBlur} onChange={formik.handleChange}  name="UserName"/></dd>
                 <dd className="text-danger">{formik.errors.UserName}</dd>
                 <dt>User-Age</dt>
                 <dd><input type="text" onChange={formik.handleChange} name="Age" /></dd>
@@ -45,7 +45,17 @@ export function YupValidationDemo(){
                 </dd>
                 <dd className="text-danger">{formik.errors.City}</dd>
             </dl>
-            <button type="submit">Register</button>
+            <button type="submit" disabled={(formik.isValid?false:true)}>Register</button>
+            {/* //<button disabled={(formik.dirty)?false:true} className="mx-4">Save</button> */}
+            <button className={(formik.dirty)?'d-inline':'d-done'}>save</button>
+        <div className="text-danger">
+            <h3> Please Check The Following Errors In Form </h3>
+            <ul>
+                {
+                    Object.values(formik.errors).map(error=><li key={error}>{error}</li>)
+                }
+            </ul>
+        </div>
         </form>
         </div>
     )
