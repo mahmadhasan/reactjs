@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route,Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 import { ToturialHome } from "./tutorial-home";
 import { JavaToturial } from "./java-tutorial";
 import { ReactToturial } from "./react-tutorial";
@@ -12,11 +14,10 @@ export function ToturialIndex(){
                     <h2 className="text-center"> Intex Tutorial</h2>
                     <nav>
                         <span>
-                            <span><link to="/home">Home</link></span>
-                            <span className="mx-5"><link to="/java">Java tutorial</link></span>
-                            <span className="me-5"><link to="/react">React tutorial</link></span>
-                            <span><link to="/weather">Weather</link></span>
-
+                            <span><Link to="/home">Home</Link></span>
+                            <span className="mx-5"><Link to="/java">Java tutorial</Link></span>
+                            <span className="me-5"><Link to="/react/:topic/:subtopic/:duration">React tutorial</Link></span>
+                            <span><Link to="/weather">Weather</Link></span>
                         </span>
                     </nav>
                 </header>
