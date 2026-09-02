@@ -32,8 +32,8 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { FormikDemo } from './components/formik-demo/formik-demo.jsx';
 //import {YupValidationDemo} from './components/yup-validation-demo/yup-validation-demo.jsx';
 //import { FormikFormDemo } from './components/formik-form-demo/formik-form-demo.jsx';
-import {FormDemo19X} from  './components/19x-form-demo/19x-form-demo.jsx';
-
+//import {FormDemo19X} from  './components/19x-form-demo/19x-form-demo.jsx';
+import { ToturialIndex } from './tutorial/tutorial-index.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -63,7 +63,7 @@ createRoot(document.getElementById('root')).render(
         {/* <YupValidationDemo/> */}
         {/* <FormikFormDemo/> */}
         {/* <ReactHookFormDemo/> */}
-
-        <FormDemo19X/>
+        {/* <FormDemo19X/> */}
+        <ToturialIndex/>
   </StrictMode>,
 )
