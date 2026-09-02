@@ -27,6 +27,7 @@ export function ToturialIndex(){
                         <Route path="java" element={<JavaToturial/>}/>
                         <Route path="react" element={<ReactToturial/>}/>
                         <Route path="weather" element={<weatherApp/>}/>           
+                        <Route path="*" elemen={<div classNmae="text-warning"><h2>Page Not Found</h2></div>}/>
                    </Routes>
                 </section>
             </BrowserRouter>
