@@ -21,6 +21,7 @@ export function FakestoreIndex(){
 
                      <Route path="search" element={<FakestoreSearch/>} />
                      <Route path="results" element={<FakestoreResults/>}/>
+                     
 
                                        
                 </Routes>

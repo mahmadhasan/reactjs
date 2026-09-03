@@ -4,7 +4,7 @@ import './index.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
-import { FakestoreIndex } from './fakestore/fakestore-index.jsx';
+//import { FakestoreIndex } from './fakestore/fakestore-index.jsx';
 //import { ReactHookFormDemo } from './components/hook-form-demo/hook-form-demo.jsx';
 //import { ThrottleDemo } from './components/throttle-demo/throttle-demo.jsx';
 //import { CarousalDemo } from './components/carousal-demo/carousal-demo.jsx';
@@ -35,6 +35,7 @@ import { FakestoreIndex } from './fakestore/fakestore-index.jsx';
 //import { FormikFormDemo } from './components/formik-form-demo/formik-form-demo.jsx';
 //import {FormDemo19X} from  './components/19x-form-demo/19x-form-demo.jsx';
 //import { ToturialIndex } from './tutorial/tutorial-index.jsx';
+import { MUIDemo } from './components/mui-demo/mui-demo.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -66,6 +67,7 @@ createRoot(document.getElementById('root')).render(
         {/* <ReactHookFormDemo/> */}
         {/* <FormDemo19X/> */}
         {/* <ToturialIndex/> */}
-        <FakestoreIndex/>
+        {/* <FakestoreIndex/> */}
+        <MUIDemo/>
   </StrictMode>,
 )
