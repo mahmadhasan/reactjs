@@ -1,17 +1,30 @@
 {
-    "users":[
-        {
-           "UserId":"baba1245",
-           "UserName":"Baba",
-           "Password":"Bhai@123",
-           "Email":"Baba1234@gmail.com"
-        },
-         {
-           "UserId":"John1245",
-           "UserName":"John",
-           "Password":"John@123",
-           "Email":"John1234@gmail.com"
-        }
-    ],
-    "appointments":[]
+  "users": [
+    {
+      "id": "DWAM0l6aqKw"
+    },
+    {
+      "user_id": "142578",
+      "user_name": "",
+      "password": "bhai@123456",
+      "email": "baba@gmail.com",
+      "id": "jbu0S6l2a_0"
+    },
+    {
+      "user_id": "142578",
+      "user_name": "",
+      "password": "bhai@123456",
+      "email": "baba@gmail.com",
+      "id": "TZF3qEzuvSY"
+    },
+    {
+      "user_id": "1234",
+      "user_name": "babab",
+      "password": "bhhhjbhhg",
+      "email": "nbna@gmail.com",
+      "id": "WFyFXHSchMQ"
+    }
+  ],
+  "appointments": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }

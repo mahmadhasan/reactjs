@@ -35,7 +35,8 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 //import { FormikFormDemo } from './components/formik-form-demo/formik-form-demo.jsx';
 //import {FormDemo19X} from  './components/19x-form-demo/19x-form-demo.jsx';
 //import { ToturialIndex } from './tutorial/tutorial-index.jsx';
-import { MUIDemo } from './components/mui-demo/mui-demo.jsx';
+//import { MUIDemo } from './components/mui-demo/mui-demo.jsx';
+import { TodoIndex } from './To-Do/todo-index.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* //<App /> */}
@@ -68,6 +69,7 @@ createRoot(document.getElementById('root')).render(
         {/* <FormDemo19X/> */}
         {/* <ToturialIndex/> */}
         {/* <FakestoreIndex/> */}
-        <MUIDemo/>
+        {/* <MUIDemo/> */}
+        <TodoIndex/>
   </StrictMode>,
 )
