@@ -1,0 +1,17 @@
+{
+    "users":[
+        {
+           "UserId":"baba1245",
+           "UserName":"Baba",
+           "Password":"Bhai@123",
+           "Email":"Baba1234@gmail.com"
+        },
+         {
+           "UserId":"John1245",
+           "UserName":"John",
+           "Password":"John@123",
+           "Email":"John1234@gmail.com"
+        }
+    ],
+    "appointments":[]
+}
